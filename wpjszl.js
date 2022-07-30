@@ -1,8 +1,9 @@
 let body = $response.body
-body = JSON.parse(body)
+console.log(`🚀 -> file: wpjszl.js -> line 2 -> body`, body)
+// body = JSON.parse(body)
 
-console.log('body', body)
+// console.log('body', body)
 
-body = JSON.stringify(body)
+// body = JSON.stringify(body)
 
 $done(body)
