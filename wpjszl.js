@@ -1,5 +1,5 @@
 let body = $response.body
-console.log(`🚀 -> file: wpjszl.js -> line 2 -> body`, body)
+console.log(`🚀 -> file: wpjszl.js -> line 2 -> body`, $response)
 // body = JSON.parse(body)
 
 // console.log('body', body)
