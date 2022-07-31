@@ -8,11 +8,13 @@ $task.fetch({
   }
 }).then(res => {
   console.log(`发送完毕${JSON.stringify(res)}`)
+  $done(body)
+}, reason => {
+  console.log(`发送失败${reason.error}`)
+  $done(body)
 })
 // body = JSON.parse(body)
 
 // console.log('body', body)
 
 // body = JSON.stringify(body)
-
-$done(body)
