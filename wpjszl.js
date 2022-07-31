@@ -3,6 +3,9 @@ let body = $response.body
 $task.fetch({
   url: 'http://192.168.50.122:4600',
   method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
   body: JSON.stringify({
     data: body
   })
