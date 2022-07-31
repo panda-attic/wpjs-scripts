@@ -1,5 +1,14 @@
 let body = $response.body
-console.log(`🚀 -> file: wpjszl.js -> line 2 -> body${$response}====${body}`)
+
+$task.fetch({
+  url: 'http://192.168.50.122:4600',
+  method: 'POST',
+  body: {
+    data: body
+  }
+}).then(res => {
+  console.log(`发送完毕${JSON.stringify(res)}`)
+})
 // body = JSON.parse(body)
 
 // console.log('body', body)
