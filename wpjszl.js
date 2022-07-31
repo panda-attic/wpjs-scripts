@@ -3,7 +3,9 @@ let body = $response.body
 $task.fetch({
   url: 'http://192.168.50.122:4600',
   method: 'POST',
-  body,
+  body: JSON.stringify({
+    data: body
+  })
 }).then(res => {
   console.log(`发送完毕${JSON.stringify(res)}`)
 }, reason => {
