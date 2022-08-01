@@ -1,7 +1,7 @@
 let body = $response.body
 
 $task.fetch({
-  url: 'http://10.11.73.77:4600',
+  url: 'http://192.168.50.122:4600',
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
